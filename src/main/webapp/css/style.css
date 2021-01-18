@@ -1,0 +1,399 @@
+.nav-link:hover, a:hover, #butt:hover, #buttOrd:hover {
+    background-color: #688181;!important;
+    opacity: initial;
+}
+
+.navbar-brand:hover {
+    background-color: unset;
+}
+
+.nav-link, a, #butt, #buttOrd{
+    background-color: unset;!important;
+    transition: 0.5s linear;
+}
+
+#butt {
+    background-color: rgba(104, 129, 129, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#buttOrd {
+    background-color: rgba(104, 129, 129, 0.5);
+    border-radius: 1px;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 5px 9px;
+    border: 0;
+    margin: 7px 2px 10px 2px;
+    outline: none;
+}
+
+@media only screen and (max-width : 480px){
+    .carousel-control, .carousel-control.right {
+        display:none;
+    }
+}
+@media(min-width: 480px) {
+    #carouselMainInner {
+        margin: 130px 0 50px 0;
+    }
+}
+
+#mastHeadCars .intro-body{
+    padding: 0px;
+}
+
+@media(max-width: 480px) {
+    #carouselMainInner {
+        margin: 10px 0 10px 0;
+    }
+}
+
+#carouselMain a:hover{
+    transition: 0.5s linear;
+    opacity:0.3;
+}
+
+#brandLogo:hover{
+    color: #688181;
+    transition: 0.5s linear;
+}
+
+#carouselMain a{
+    width: 40px;
+}
+
+#carPage{
+    margin-top: 180px;
+    margin-left: 70px;
+}
+
+#adminPage{
+    margin-top: 180px;
+    margin-left: 70px;
+    margin-right: 5px;
+}
+
+#paymentPage{
+    margin-top: 80px;
+}
+
+#clientOrderPage{
+    margin-top: 180px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#adminOfficeNav{
+    margin-top: 130px;
+    margin-right: 40px;
+}
+
+#adminNavButtons{
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+#adminContent{
+    margin-top: 20px;
+}
+
+#adminCarsFilter{
+    margin-top: 80px;
+    margin-left: 70px;
+}
+
+.intro-body{
+    background-image: url("/img/background_city.png");
+    background-size: cover;
+}
+
+#errorCarusel{
+    bottom: 25%;
+}
+
+#errorCarusel h3 span{
+    font-size: 35px;
+    color: #cb5c18;
+    font-weight: 600;
+}
+
+#errorCarusel h2 span{
+    font-size: 30px;
+    color: #e7ff00;
+    font-weight: 600;
+}
+
+#errorCarusel h1 span{
+    font-size: 20px;
+    color: #e7ff00;
+    font-weight: 400;
+}
+
+.fas, .far {
+    font-size: 90px;
+}
+
+.far .fa-chevron-left{
+    font-size: 13px;
+}
+
+.far .fa-chevron-right{
+    font-size: 13px;
+}
+
+.fas:hover, .far:hover {
+    color: #688181;
+    transition: 0.5s linear;
+}
+
+#pics{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#payBut{
+    margin-bottom: 0;
+}
+
+#labelPage{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#mainNav.navbar-shrink{
+    background-color: #5e6262;
+}
+
+#range_03{
+    background-color: #688181;
+}
+
+#carElement .form-row{
+    padding-right: 0;
+}
+
+
+#carElement{
+    background-color: rgba(0,0,0,0.08);
+}
+
+#orderElement, #clientElement{
+    background-color: rgba(0,0,0,0.08);
+}
+
+#carsListTable{
+    font-size: 12px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+#listTable{
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#ordersListTable, #clientsListTable{
+    cursor: default;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+#carsListTable .form-control{
+    font-size: 12px; !important;
+    height: 24px; !important;
+    padding: 0;
+}
+
+@media (min-width: 576px){
+    #carsFilter {
+        font-size: 13px;
+    }
+}
+
+#carsFilter .form-control{
+    font-size: 13px;
+    height: 28px;
+}
+
+#orderDetails{
+    margin:auto 10px auto 10px;
+}
+
+#orderTable, #clientOrderTable{
+    color: #ffffff;
+}
+
+#ordersListTable td, #clientsListTable td{
+    font-size: 12px;
+}
+#ordersListTable th, #clientsListTable th{
+    font-size: 12px;
+}
+#ordersListTable tr, #clientsListTable tr{
+    font-size: 12px;
+}
+
+#clientOrderTable td{
+    font-size: 18px;
+}
+#clientOrderTable th{
+    font-size: 18px;
+}
+#clientOrderTable tr{
+    font-size: 18px;
+}
+
+#ordersListTable td[name=email], td[name=car_model]{
+    text-decoration: underline;
+}
+
+#ordersListTable td[name=email]:hover, td[name=car_model]:hover{
+    color: #688181;!important;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+#orderSelect, #clientSelect{
+    padding: 0;
+}
+
+#notificationMessage{
+    width: 80%;
+    margin: auto auto 4px auto;
+    font-size: 13px;
+}
+
+#declineOrder, #blockUser{
+    background-color: #816767;!important;
+    opacity: initial;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+#declineOrder:hover, #blockUser:hover{
+    background-color: unset;!important;
+    transition: 0.5s linear;
+}
+
+#activateOrder, #unblockUser{
+    background-color: #6e8066;!important;
+    opacity: initial;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+#paymentOrder{
+    background-color: #6e8066;!important;
+    opacity: initial;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+#activateOrder:hover, #unblockUser:hover, #paymentOrder:hover{
+    background-color: unset;!important;
+    transition: 0.5s linear;
+}
+
+#carouselOrder{
+    margin:auto 10px auto 10px;
+}
+
+#filterbutton, #logBut, #regHref{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#regHref{
+    text-align: center;
+}
+
+#regHref a{
+    padding: 3px 10px;
+}
+
+#createCarsForm{
+    margin: 200px auto 20px auto;
+}
+
+#createCarsForm .form-control{
+    font-size: 13px;
+    height: 28px;
+    margin-right: 3px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#createCarsForm button{
+    background-color: rgba(104, 129, 129, 0.5);
+    transition: 0.5s linear;
+    padding: 5px 20px;
+    font-size: 17px;
+}
+
+#createCarsForm button:hover {
+    background-color: #688181;!important;
+    opacity: initial;
+}
+
+#addCarTable {
+    margin: 30px 30px;
+}
+
+#addCarTable .alert{
+    margin-bottom: 0;
+}
+
+#addCarTable tr{
+    margin-bottom: 3px;
+}
+
+#addCarTable td{
+    margin-right: 3px;
+}
+
+td label{
+    margin-bottom: 0;
+}
+
+#errorPage{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#notificationPage label{
+    text-align: center;
+    font-size: 25px;
+}
+
+#pagination label{
+    margin-top: 7px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#pagination a{
+    margin-top: 7px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+
