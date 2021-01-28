@@ -1,8 +1,9 @@
 package com.kashuba.petproject.model.entity;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
-public class Policy extends Entity {
+public class Policy {
 
     private String registeredObject;
     private int sumInsured;
@@ -79,49 +80,6 @@ public class Policy extends Entity {
 
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        Policy policy = (Policy) o;
-
-        return registeredObject == null ? policy.registeredObject == null
-                : registeredObject.equals(policy.registeredObject)
-                && sumInsured == policy.sumInsured
-                &&  contractCurrency == null ? policy.contractCurrency == null
-                : contractCurrency.equals(policy.contractCurrency)
-                &&  firstName == null ? policy.firstName == null
-                : firstName.equals(policy.firstName)
-                &&  secondName == null ? policy.secondName == null
-                : secondName.equals(policy.secondName)
-                &&  insuranceCoverageArea == null ? policy.insuranceCoverageArea == null
-                : insuranceCoverageArea.equals(policy.insuranceCoverageArea)
-                &&  termOfValidity == null ? policy.termOfValidity == null
-                : termOfValidity.equals(policy.termOfValidity)
-                &&  insuranceType == null ? policy.insuranceType == null
-                : insuranceType.equals(policy.insuranceType);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = 1;
-        result += 37 * result + (registeredObject == null ? 0 : registeredObject.hashCode());
-        result += 37 * result + (contractCurrency == null ? 0 : contractCurrency.hashCode());
-        result += 37 * result + (firstName == null ? 0 : firstName.hashCode());
-        result += 37 * result + (secondName == null ? 0 : secondName.hashCode());
-        result += 37 * result + (insuranceCoverageArea == null ? 0 : insuranceCoverageArea.hashCode());
-        result += 37 * result + (insuranceType == null ? 0 : insuranceType.hashCode());
-        result += 37 * result + sumInsured;
-        result += 37 * result + (termOfValidity == null ? 0 : termOfValidity.hashCode());
-
-        return result;
-    }
-
-    @Override
     public String toString() {
         return "Policy{" +
                 "registeredObject='" + registeredObject + '\'' +
@@ -133,5 +91,25 @@ public class Policy extends Entity {
                 ", termOfValidity=" + termOfValidity +
                 ", insuranceType='" + insuranceType + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Policy policy = (Policy) o;
+        return sumInsured == policy.sumInsured &&
+                Objects.equals(registeredObject, policy.registeredObject) &&
+                Objects.equals(contractCurrency, policy.contractCurrency) &&
+                Objects.equals(firstName, policy.firstName) &&
+                Objects.equals(secondName, policy.secondName) &&
+                Objects.equals(insuranceCoverageArea, policy.insuranceCoverageArea) &&
+                Objects.equals(termOfValidity, policy.termOfValidity) &&
+                Objects.equals(insuranceType, policy.insuranceType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(registeredObject, sumInsured, contractCurrency, firstName, secondName, insuranceCoverageArea, termOfValidity, insuranceType);
     }
 }

@@ -6,13 +6,13 @@ import com.kashuba.petproject.util.ParameterKey;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/process_controller")
-public class ProcessController extends HttpServlet {
+
+//@WebServlet(urlPatterns = "/process_controller")
+public class PdfController {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -36,3 +36,5 @@ public class ProcessController extends HttpServlet {
         }
     }
 }
+
+

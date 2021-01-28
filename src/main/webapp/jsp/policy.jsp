@@ -16,25 +16,37 @@
 <body id="page-top" style="background-color: rgb(56,55,57);">
 <header class="masthead">
     <div class="intro-body">
-    <div class="col-md-8 offset-md-3">
-            <div class="col-8">
-                <label id="labelPage">Property insurance contract</label>
-            ${requestScope.policyList.firstName} ${requestScope.policyList.secondName}, hereinafter referred to as
-                the insurer,has entered into an agreement, hereinafter the Agreement, with the company EIS|GROUP about
-                the following
-                <label id="labelPage">scope of agreement </label>
-                According to this contract, the Insurer undertakes upon the occurrence of one of the insured events
-                stipulated in the contract that entailed the loss or damage of property of the
-                ${requestScope.policyList.registeredObject}, type hereinafter referred to as the type hereinafter
-                referred to as the "Insured Property", pay compensation in the amount of
-                ${requestScope.policyList.sumInsured} currency units such as
-                '${requestScope.policyList.contractCurrency}'. Insurance works only in
-                ${requestScope.policyList.insuranceCoverageArea} and until${requestScope.policyList.termOfValidity}
-                <label id="labelPage">JSON</label>
-            ${requestScope.gsonKey}
-                <label id="labelPage">PDF version of the policy was saved in the tomcat folder</label>
+    <div class="col-md-6 offset-md-3">
+        <form action="process_controller" method="get" class="shadow-lg custom-form" id="register" style="background-color: rgba(0,0,0,0.08); font-family: Nunito">
+        <input type="hidden" name="command" value="MOVE_PDFPOLICY">
+        <button class="btn btn-dark submit-button" type="submit" id="butt">
+            CREATE PDF</button>
+        </form>
+        <form action="process_controller" method="get" class="shadow-lg custom-form" id="register" style="background-color: rgba(0,0,0,0.08); font-family: Nunito">
+        <input type="hidden" name="command" value="MOVE_JSONPOLICY">
+            <button class="btn btn-dark submit-button" type="submit" id="butt">
+                CREATE JSON</button>
+        </form>
+
+
+
+    <%--            <div class="col-8">--%>
+<%--                <label id="labelPage">Property insurance contract</label>--%>
+<%--            ${requestScope.policyList.firstName} ${requestScope.policyList.secondName}, hereinafter referred to as--%>
+<%--                the insurer,has entered into an agreement, hereinafter the Agreement, with the company EIS|GROUP about--%>
+<%--                the following--%>
+<%--                <label id="labelPage">scope of agreement </label>--%>
+<%--                According to this contract, the Insurer undertakes upon the occurrence of one of the insured events--%>
+<%--                stipulated in the contract that entailed the loss or damage of property of the--%>
+<%--                ${requestScope.policyList.registeredObject}, type hereinafter referred to as the type hereinafter--%>
+<%--                referred to as the "Insured Property", pay compensation in the amount of--%>
+<%--                ${requestScope.policyList.sumInsured} currency units such as--%>
+<%--                '${requestScope.policyList.contractCurrency}'. Insurance works only in--%>
+<%--                ${requestScope.policyList.insuranceCoverageArea} and until${requestScope.policyList.termOfValidity}--%>
+<%--                <label id="labelPage">JSON</label>--%>
+<%--            ${requestScope.gsonKey}--%>
+<%--                <label id="labelPage">PDF version of the policy was saved in the tomcat folder</label>--%>
             </div>
-    </div>
     </div>
 </header>
 <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>

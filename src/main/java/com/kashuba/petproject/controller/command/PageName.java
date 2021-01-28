@@ -2,7 +2,8 @@ package com.kashuba.petproject.controller.command;
 
 public enum PageName {
     REGISTER("/jsp/register.jsp"),
-    LOGIN("/jsp/policy.jsp"),
+    JSON("/jsp/json.jsp"),
+    POLICY("/jsp/policy.jsp"),
     HOME("/jsp/home.jsp");
 
     private String path;
